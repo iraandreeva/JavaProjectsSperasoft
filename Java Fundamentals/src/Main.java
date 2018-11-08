@@ -3,11 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+        /*First commit
         //System.out.println("Min of 2 integers= " + min2(15, 23));
         //System.out.println("Min of 3 integers= " + min3(15, 23, 2));
         //System.out.println("Min of 4 integers= " + min4(15, 23, 2, 1));
+        */
 
+        //Second commit
         Scanner a = new Scanner(System.in);
         int numA = a.nextInt();
         Scanner b = new Scanner(System.in);
