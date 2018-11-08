@@ -23,7 +23,8 @@ public class Main {
         System.out.println("Min of 4 integers= " + min4(numA, numB, numC, numD));
 
     }
-    
+
+    //Third commit
     public static int min2 (int a, int b)
     {
         int min;
