@@ -23,14 +23,11 @@ public class Main {
         System.out.println("Min of 4 integers= " + min4(numA, numB, numC, numD));
 
     }
+    
     public static int min2 (int a, int b)
     {
         int min;
-        if (a < b)
-            min = a;
-        else
-            min = b;
-        return min;
+        return min = a < b ? a : b;
     }
 
     public static int min3 (int a, int b, int c)
