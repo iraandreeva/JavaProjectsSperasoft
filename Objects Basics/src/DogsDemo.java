@@ -1,23 +1,32 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class DogsDemo {
 
     public static void main(String[] args) {
         int dogNumber;
 
-        //From the console, the user specifies the number of dogs and names\age\size for as many dogs as he wants (divided by space)
-        //An array of dogs is created based on user input. Sort generated array by name, size and age in ascending or descending order.
-        //Print out the array after sorting by each field.
-
+        System.out.println("Enter dogs number: ");
+        Scanner n = new Scanner(System.in);
+        dogNumber = n.nextInt();
+        
+        Dog[] dogs = new Dog[dogNumber];
+        for (int i = 0; i < dogNumber; i++) {
+            System.out.println("Enter dog's #" + i  + " name:");
+            dogs[i].name = n.nextLine();
+            if (dogs[i].name == "")
+                dogs[i].defaultName();
+            System.out.println("Enter dog's #" + i + " age:");
+            dogs[i].age = n.nextInt();
+            if (dogs[i].age == 0)
+                dogs[i].getRandomAge();
+            System.out.println("Enter dog's #" + i + " size:");
+            dogs[i].size = n.nextLine();
+            if (dogs[i].size == "")
+                dogs[i].
+        }
     }
 }
-
-//Create class Dog with the following fields: name, size (one of 3 options big, small, medium), age 1 to 20
-//The user can specify any or none of the values for name, age or size when creating a new Dog
-//from the console\file user specifies the number of dogs and names for as many dogs as he wanted (divided by space); Example: '10 Penny Sheldon Leonard').
-//If the name isn't provided, it should be auto-generated;
-//If age isn't provided, it should be auto-generated (1 to 20);
-//If size isn't provided, it should be auto-generated.
 
 class Dog {
 
@@ -40,11 +49,12 @@ class Dog {
         }
     }
 
-   public void defaultName(String name) {
-        name = "Barbos";
+   public void defaultName() {
+        String[] names = {"Barbos", "Pes", "Bolonka", "Selezenka"};
+        name = names[random.nextInt(names.length)];
     }
 
-    public void randomAge() {
+    public void getRandomAge() {
         int number = minAge + random.nextInt(maxAge - minAge + 1);
 
     }
