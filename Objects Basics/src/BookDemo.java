@@ -10,10 +10,11 @@ class Main {
 
     bookAuthor author;
     bookName bookDemo;
+    double price = 79.75;
 
     public void run(){
         author = new bookAuthor("Russel", "Winderand");
-        bookDemo = new bookName("Developing Java Software", author, 79.75);
+        bookDemo = new bookName("Developing Java Software", author, price);
         author.print();
         bookDemo.print();
     }
