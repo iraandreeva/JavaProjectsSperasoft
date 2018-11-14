@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ClockDemo {
 
     public static void main(String[] args) {
-        
+
         System.out.println("Enter seconds after midnight:");
         Scanner sc = new Scanner(System.in);
         int sec = sc.nextInt();

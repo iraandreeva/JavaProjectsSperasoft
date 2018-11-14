@@ -184,7 +184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542202221896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542202275572" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -199,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClockDemo">
+  <component name="RunManager" selected="Application.DogsDemo">
     <configuration name="BookDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BookDemo" />
       <module name="Objects Basics" />
@@ -239,8 +239,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClockDemo" />
         <item itemvalue="Application.DogsDemo" />
+        <item itemvalue="Application.ClockDemo" />
         <item itemvalue="Application.BookDemo" />
         <item itemvalue="Application.Main" />
       </list>
