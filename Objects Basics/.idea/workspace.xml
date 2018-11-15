@@ -31,7 +31,7 @@
     <session id="-1457679973">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
@@ -92,21 +92,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ClockDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DogsDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TurtleGraphicsDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
-              <caret line="200" column="32" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+            <state relative-caret-position="-157">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
               <folding>
-                <element signature="e#7699#7700#0" expanded="true" />
-                <element signature="e#7731#7732#0" expanded="true" />
-                <element signature="e#7766#7767#0" expanded="true" />
-                <element signature="e#7800#7801#0" expanded="true" />
-                <element signature="e#7829#7830#0" expanded="true" />
-                <element signature="e#7861#7862#0" expanded="true" />
-                <element signature="e#7896#7897#0" expanded="true" />
-                <element signature="e#7930#7931#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5796#5797#0" expanded="true" />
+                <element signature="e#5828#5829#0" expanded="true" />
+                <element signature="e#5863#5864#0" expanded="true" />
+                <element signature="e#5897#5898#0" expanded="true" />
+                <element signature="e#5926#5927#0" expanded="true" />
+                <element signature="e#5958#5959#0" expanded="true" />
+                <element signature="e#5993#5994#0" expanded="true" />
+                <element signature="e#6027#6028#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BookDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -147,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -156,33 +186,11 @@
               <item name="Objects Basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="Objects Basics" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Objects Basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Objects Basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Objects Basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Objects Basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BookDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Objects Basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Objects Basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ClockDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Objects Basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Objects Basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DogsDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,9 +279,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118120804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,15 +316,15 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/ClockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DogsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -325,28 +333,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BookDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TurtleGraphicsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="200" column="32" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+        <state relative-caret-position="-157">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
           <folding>
-            <element signature="e#7699#7700#0" expanded="true" />
-            <element signature="e#7731#7732#0" expanded="true" />
-            <element signature="e#7766#7767#0" expanded="true" />
-            <element signature="e#7800#7801#0" expanded="true" />
-            <element signature="e#7829#7830#0" expanded="true" />
-            <element signature="e#7861#7862#0" expanded="true" />
-            <element signature="e#7896#7897#0" expanded="true" />
-            <element signature="e#7930#7931#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5796#5797#0" expanded="true" />
+            <element signature="e#5828#5829#0" expanded="true" />
+            <element signature="e#5863#5864#0" expanded="true" />
+            <element signature="e#5897#5898#0" expanded="true" />
+            <element signature="e#5926#5927#0" expanded="true" />
+            <element signature="e#5958#5959#0" expanded="true" />
+            <element signature="e#5993#5994#0" expanded="true" />
+            <element signature="e#6027#6028#0" expanded="true" />
           </folding>
         </state>
       </provider>
