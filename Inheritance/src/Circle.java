@@ -1,20 +1,20 @@
 public class Circle {
 
     protected double radius;
-    protected String color;
+    protected String colour;
 
     public Circle() {
         radius = 5.0;
-        color = "Red";
+        colour = "Red";
     }
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
-    public Circle(double radius, String color) {
+    public Circle(double radius, String colour) {
         this.radius = radius;
-        this.color = color;
+        this.colour = colour;
     }
 
     public double getRadius() {
@@ -26,11 +26,11 @@ public class Circle {
     }
 
     public String getColour() {
-        return color;
+        return colour;
     }
 
     public void setColour(String colour) {
-        this.color = colour;
+        this.colour = colour;
     }
 
     public double getArea() {
@@ -39,6 +39,6 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle radius is " + getRadius() + ". Color is " + getColour() + ". Area is" + getArea() + ".\n";
+        return "Circle radius is " + getRadius() + ". Colour is " + getColour() + ". Area is " + String.format("%.4g", getArea()) + ".\n";
     }
 }
