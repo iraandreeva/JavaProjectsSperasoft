@@ -10,6 +10,7 @@ public class Circle {
 
     public Circle(double radius) {
         this.radius = radius;
+        colour = "Green";
     }
 
     public Circle(double radius, String colour) {
@@ -34,11 +35,12 @@ public class Circle {
     }
 
     public double getArea() {
+
         return radius*radius*Math.PI;
     }
 
     @Override
     public String toString() {
-        return "Circle radius is " + getRadius() + ". Colour is " + getColour() + ". Area is " + String.format("%.4g", getArea()) + ".\n";
+        return "Circle radius is " + radius + ". Colour is " + colour + ". Area is " + String.format("%.2f", getArea()) + ".\n";
     }
 }

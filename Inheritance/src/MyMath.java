@@ -1,30 +1,84 @@
 public class MyMath {
-   private int number;
-   private int[] array;
-   private int min;
-   private int max;
 
 
-   public int minArray(int[] array) {
-       for (int i = 0; i < array.length; i++) {
-           min = array[i];
-           if (min > array[i+1]) {
-               min = array[i+1];
+   public static int minArray(int[] array) {
+       int min = array[0];
+       for (int i = 1; i < array.length; i++) {
+           if (min > array[i]) {
+               min = array[i];
            }
-            i++;
        }
        return min;
    }
 
-    public int maxArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            max = array[i];
-            if (max < array[i+1]) {
-                max = array[i+1];
+    public static double minArray(double[] array) {
+        double min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
             }
-            i++;
+        }
+        return min;
+    }
+
+    public static int maxArray(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
         }
         return max;
+    }
+
+    public static double maxArray(double[] array) {
+        double max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
+    public int nextAfter(int[] array, int number) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > number) {
+                return array[i];
+            }
+        }
+        return 0;
+    }
+
+    public double nextAfter(double[] array, double number) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > number) {
+                return array[i];
+            }
+        }
+        return 0;
+    }
+
+    public int pow(int number1, int number2) {
+       int res = number1;
+       if (number2 == 0)
+           return 1;
+       for (int i = 1; i < number2; i++) {
+            res *= number1;
+
+        }
+        return res;
+    }
+
+    public double pow(double number1, int number2) {
+        double res = number1;
+        if (number2 == 0)
+            return 1;
+        for (int i = 1; i < number2; i++) {
+            res *= number1;
+
+        }
+        return res;
     }
 
 }

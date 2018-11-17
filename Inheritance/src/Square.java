@@ -1,5 +1,3 @@
-import java.sql.SQLInvalidAuthorizationSpecException;
-
 public class Square extends Rectangle {
 
     public Square() {
@@ -8,6 +6,7 @@ public class Square extends Rectangle {
 
     public Square(double width) {
         this.width = width;
+        this.height = width;
     }
 
     public Square(double width, String colour, boolean filled) {
@@ -26,10 +25,12 @@ public class Square extends Rectangle {
     @Override
     public void setWidth(double width) {
         this.width = width;
+        this.height = width;
     }
 
     @Override
     public void setHeight(double height) {
         this.width = width;
+        this.height = width;
     }
 }

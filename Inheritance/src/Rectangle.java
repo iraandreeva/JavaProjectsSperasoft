@@ -1,4 +1,3 @@
-import org.w3c.dom.css.Rect;
 
 public class Rectangle extends Shape {
     protected double width;
@@ -15,10 +14,9 @@ public class Rectangle extends Shape {
     }
 
     public Rectangle(double width, double height, String colour, boolean filled) {
+        super(colour, filled);
         this.width = width;
         this.height = height;
-        this.colour = colour;
-        this.filled = filled;
     }
 
     public double getWidth() {
