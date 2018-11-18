@@ -12,7 +12,8 @@ public class MathDemo {
         System.out.println("Max number = " + math.maxArray(array1));
         System.out.println("Next max after = " + math.nextAfter(array, 42));
         System.out.println("Next max after = " + math.nextAfter(array1, 76.5));
-        System.out.println("Pow = " + math.pow(2,10));
+        System.out.println("Pow = " + math.pow(2,-2));
+        System.out.println("Pow = " + Math.pow(2,-2));
         System.out.println("Pow = " + String.format("%.2f", math.pow(2.5,10)));
 
     }

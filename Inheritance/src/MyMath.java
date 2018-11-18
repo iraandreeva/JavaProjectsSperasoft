@@ -59,26 +59,38 @@ public class MyMath {
         return 0;
     }
 
-    public int pow(int number1, int number2) {
+    public double pow(int number1, int number2) {
        int res = number1;
        if (number2 == 0)
            return 1;
-       for (int i = 1; i < number2; i++) {
+       for (int i = 1; i < abs(number2); i++) {
             res *= number1;
 
         }
-        return res;
+        return number2 < 0 ? 1.0/res : res;
+    }
+
+    public int abs(int number) {
+       if (number < 0)
+           return -number;
+       return number;
+    }
+
+    public double abs(double number) {
+        if (number < 0)
+            return -number;
+        return number;
     }
 
     public double pow(double number1, int number2) {
         double res = number1;
         if (number2 == 0)
             return 1;
-        for (int i = 1; i < number2; i++) {
+        for (int i = 1; i < abs(number2); i++) {
             res *= number1;
 
         }
-        return res;
+        return number2 < 0 ? 1.0/res : res;
     }
 
 }
