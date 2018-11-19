@@ -43,7 +43,7 @@ public class Circle extends Shape {
 
     @Override
     public boolean isInside(double x, double y) {
-        
+
         return true;
     }
 }
