@@ -12,25 +12,9 @@ public class ShapeDemo {
         shapes[5] = new Square(3);
 
         for (int i = 0; i < shapes.length; i++) {
-
-            if(shapes[i] instanceof Circle) {
-                shapes[i].toString();
-                System.out.println("Circle " + i + " area = " + String.format("%.2f", shapes[i].getArea()));
-                System.out.println("Circle " + i + " perimeter = " + String.format("%.2f", shapes[i].getPerimeter()) + "\n");
-            }
-            if(shapes[i] instanceof Rectangle) {
-                shapes[i].toString();
-                System.out.println("Rectangle " + i + " area = " + String.format("%.2f", shapes[i].getArea()));
-                System.out.println("Rectangle " + i + " perimeter = " + String.format("%.2f", shapes[i].getPerimeter()) + "\n");
-            }
-            if(shapes[i] instanceof Square) {
-                shapes[i].toString();
-                System.out.println("Square " + i + " area = " + String.format("%.2f", shapes[i].getArea()));
-                System.out.println("Square " + i + " perimeter = " + String.format("%.2f", shapes[i].getPerimeter()) + "\n");
-            }
-
-
-
+                System.out.print(shapes[i]);
+                System.out.println("Area = " + String.format("%.2f", shapes[i].getArea()) );
+                System.out.println("Perimeter = " + String.format("%.2f", shapes[i].getPerimeter()) + "\n");
         }
 
     }

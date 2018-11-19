@@ -21,7 +21,7 @@ public class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "A Square with side = " + width + ", which is a subclass of " + super.toString() + ". \n";
+        return "A Square with side = " + width + ", which is a subclass of " + super.toString();
     }
 
     @Override
