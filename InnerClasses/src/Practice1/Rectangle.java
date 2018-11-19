@@ -51,4 +51,9 @@ public class Rectangle extends Shape {
     public double getArea() {
         return width*height;
     }
+
+    @Override
+    public boolean isInside(double x, double y) {
+        return true;
+    }
 }

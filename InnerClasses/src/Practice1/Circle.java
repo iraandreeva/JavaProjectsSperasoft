@@ -41,5 +41,9 @@ public class Circle extends Shape {
         return two*radius*Math.PI;
     }
 
-
+    @Override
+    public boolean isInside(double x, double y) {
+        
+        return true;
+    }
 }

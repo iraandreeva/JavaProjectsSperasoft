@@ -39,7 +39,7 @@ public abstract class Shape {
 
     public abstract double getPerimeter();
 
-    //public abstract boolean isInside(double x, double y);
+    public abstract boolean isInside(double x, double y);
 
 
 }
