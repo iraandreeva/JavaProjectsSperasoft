@@ -54,6 +54,8 @@ public class Rectangle extends Shape {
 
     @Override
     public boolean isInside(double x, double y) {
-        return true;
+        if ((x > - width/2 && x < width/2) &&  (y > - height/2 && y < height/2))
+            return true;
+        return false;
     }
 }

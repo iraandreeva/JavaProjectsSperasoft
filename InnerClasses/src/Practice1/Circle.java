@@ -43,7 +43,8 @@ public class Circle extends Shape {
 
     @Override
     public boolean isInside(double x, double y) {
-
+        if (Math.sqrt(x*x+y*y) < radius)
         return true;
+        return false;
     }
 }

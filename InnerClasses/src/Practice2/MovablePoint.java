@@ -1,11 +1,52 @@
 package Practice2;
 
 public class MovablePoint implements Movable {
-    int x;
-    int y;
-    int xSpeed;
-    int ySpeed;
-    private Position penPosition;
+    private int x;
+    private int y;
+    private int xSpeed;
+    private int ySpeed;
+
+    private MovablePoint() {
+        x = 0;
+        y = 0;
+        xSpeed = 1;
+        ySpeed = 1;
+    }
+
+    public MovablePoint(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    protected void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    protected void setY(int y) {
+        this.y = y;
+    }
+
+    private void setxSpeed(int xSpeed) {
+        this.xSpeed = xSpeed;
+    }
+
+    private void setySpeed(int ySpeed) {
+        this.ySpeed = ySpeed;
+    }
+
+
+
+    public String toString() {
+        return "Coordinates x = " + x + ", y = " + y;
+    }
 
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
@@ -16,58 +57,25 @@ public class MovablePoint implements Movable {
 
     @Override
     public void moveUp() {
-            penPosition.y--;
+
+            y = y + ySpeed;
         }
 
         @Override
     public void moveDown() {
-            penPosition.y++;
+            y = y - ySpeed;
         }
 
 
-
+    @Override
     public void moveLeft() {
-            penPosition.x--;
+            x = x - xSpeed;
     }
 
+    @Override
     public void moveRight() {
-            penPosition.x++;
+            x = x + xSpeed;
         }
     }
 
 
-    class Position {
-        int x;
-        int y;
-
-        public Position() {
-            x = 0;
-            y = 0;
-        }
-
-        public Position(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        public int getX() {
-            return x;
-        }
-
-        public void setX(int x) {
-            this.x = x;
-        }
-
-        public int getY() {
-            return y;
-        }
-
-        public void setY(int y) {
-            this.y = y;
-        }
-
-        public void setPos(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
