@@ -5,17 +5,15 @@ public class MovableRectangle implements Movable {
     private MovablePoint topLeft;
     private MovablePoint bottomRight;
 
-    private MovableRectangle() {
-        topLeft.setX(4);
-        topLeft.setY(2);
-        bottomRight.setX(4);
-        bottomRight.setY(-2);
+    public MovableRectangle() {
+        topLeft = new MovablePoint(4,2);
+        bottomRight = new MovablePoint(-4, 2);
     }
 
 
     @Override
    public String toString() {
-       return "Coordinates topLeft = " + topLeft + ", bottomRight = " + bottomRight;
+       return "TopLeft " + topLeft + ", bottomRight " + bottomRight;
    }
 
    @Override
