@@ -1,5 +1,6 @@
 package Practice3;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 
@@ -26,7 +27,8 @@ public class HashSetDemo {
 
         }
 
-        Collections.sort(breed);
+        //Collections.sort(breed.toArray());
+
 
         System.out.println("\n\nMy sorted HashSet:");
         for (String s: breed) {

@@ -7,15 +7,15 @@ package Practice2;
 //Write a simple demo class to test your method with various types of objects.
 //You may use existing Java classes or implement your own.
 
-/*public class GenericDemo {
+public class GenericDemo {
 
-    //public static void main(String[] args) {
+    public static void main(String[] args) {
 
     GenericDemo demo = new GenericDemo();
     Pair<String> name1 = new Pair<String>();
     name1.add("Mama");
     Pair<String> name2 = new Pair<String>();
-    name2.add("Mila");
-    System.out.println("Is equal " + name1 + " with " + name2 + ": " + genericMethod(name1, name2));
-}//}
-*/
+    name2.add("Mama");
+    System.out.println("Is equal " + name1.getT() + " with " + name2.getT() + ": " + Pair.compare(name1, name2));
+}}
+

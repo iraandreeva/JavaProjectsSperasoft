@@ -1,24 +1,30 @@
-/*package Practice2;
+package Practice2;
 
-public class Pair<T1, T2 extends Comparable<T1>> {
+public class Pair<T> implements Comparable {
 
-    private T1 t1;
-    private T2 t2;
+    private T t1;
 
-    public void add(T1 t1, T2 t2) {
+    public void add(T t1) {
         this.t1 = t1;
-        this.t2 = t2;
+
     }
 
-    public T1 getFirst() {
+    public T getT() {
         return t1;
     }
 
-    /*public T2 getSecond() {
-        return t2;
-    }*/
 
-    /*public boolean compareTo(T1 t1 ) {
-        return getFirst().compareTo(t1.getFirst());
+    @Override
+    public int compareTo(Object o) {
+        Pair<T> t2 = (Pair<T>) o;
+        if (t1.equals(t2.t1))
+            return 0;
+        return 1;
     }
-}*/
+
+    public static boolean compare(Object p1, Object p2) {
+        if(p1.getClass() != p2.getClass())
+            return  false;
+        return ((Comparable)p1).compareTo(p2) == 0 ? true : false;
+    }
+}

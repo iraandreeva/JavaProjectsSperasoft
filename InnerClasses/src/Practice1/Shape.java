@@ -30,7 +30,6 @@ public abstract class Shape {
         this.filled = filled;
     }
 
-    @Override
     public String toString() {
         return "A Shape with the colour of " + colour + " and " + filled + ".\n";
     }
