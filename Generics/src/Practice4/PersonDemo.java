@@ -13,5 +13,49 @@ package Practice4;
 //sorting of the Person list using implemented comparator;
 //both methods for removing duplicates and comparing two lists.
 
+import java.util.*;
+
 public class PersonDemo {
+
+    public static void main(String[] args) {
+
+        ArrayList<Person> demo = new ArrayList<>();
+        demo.add (new Person("Valera", 23));
+        demo.add (new Person("Oleg", 45));
+        demo.add (new Person("Kirill", 65));
+        demo.add (new Person("Vitaly", 23));
+        demo.add (new Person("Valera", 24));
+
+        System.out.println("My ArrayList:");
+        for (Person s: demo) {
+            System.out.println(s.getName() + "\t" + s.getAge() + "\t");
+
+        }
+
+
+
+        //sorting of the Person list without comparator
+        //Collections.sort(demo);
+
+        //sorting of the Person list using implemented comparator
+        Collections.sort(demo, Comparator.comparing(Person::getName)
+                .thenComparingInt(Person::getAge));
+
+        System.out.println("\nMy sorted ArrayList:");
+        for (Person s: demo) {
+
+            System.out.println(s.getName() + "\t" + s.getAge() + "\t");
+
+        }
+        
+
+        System.out.println("\nRemoved duplicates:");
+        for (Person s: demo) {
+
+            System.out.println(s.getName() + "\t" + s.getAge() + "\t");
+
+        }
+
+
+    }
 }

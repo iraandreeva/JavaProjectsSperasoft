@@ -17,7 +17,7 @@ public class HashSetDemo {
         breed.add("Buldog");
         breed.add("Mops");
 
-        //breed.;//замена элемента
+        //breed.;//нет замены элемента
 
         breed.remove("Buldog");
 
@@ -27,14 +27,8 @@ public class HashSetDemo {
 
         }
 
-        //Collections.sort(breed.toArray());
+        //нет встроенной сортировки
 
-
-        System.out.println("\n\nMy sorted HashSet:");
-        for (String s: breed) {
-            System.out.print(s + "\t");
-
-        }
 
     }
 }
