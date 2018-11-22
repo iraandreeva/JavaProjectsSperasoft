@@ -6,5 +6,5 @@ package Practice5;
 //reverse elements;
 //iterate over the list (create your own Iterator implementation for that)
 
-public class LinkedList {
+public class LinkedList<T> {
 }

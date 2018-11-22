@@ -1,5 +1,7 @@
 package Practice4;
 
+import java.util.*;
+
 public class Person implements Comparable<Person> {
     protected String name;
     protected int age;
@@ -31,15 +33,40 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
+
         return this.age > o.age ? 1 : this.age < o.age ? - 1 : 0;
     }
 
-    public static int compare(Person o1, Person o2) {
-        return ((Comparable)o1.getName()).compareTo(o2.getName()) == 0 ? o1.getAge() - o2.getAge() : o1.getName().compareTo(o2.getName());
+    @Override
+    public boolean equals(Object o){
+        if(!(o instanceof Person))
+            return false;
+        Person p = (Person)o;
+        return this.getName().equals(p.getName()) && this.getAge() == p.getAge();
     }
 
-    public int removeDuplicates(Person o) {
-        return 0;
+    public static ArrayList<Person> removeDuplicates(ArrayList<Person> o) {
+        o.sort(new PersonComparator());
+        for (int i = 0; i < o.size() - 1; i++) {
+            Person cur = o.get(i);
+            Person next = o.get(i + 1);
+            if(cur.equals(next)){
+                o.remove(cur);
+            }
+        }
+        return o;
+    }
+
+    public static boolean equalsLists(ArrayList<Person> l1, ArrayList<Person> l2) {
+        if(l1.size() != l2.size())
+            return false;
+        l1.sort(new PersonComparator());
+        l2.sort(new PersonComparator());
+        for (int i = 0; i < l1.size(); i++) {
+            if(!l1.get(i).equals(l2.get(i)))
+                return false;
+        }
+        return true;
     }
 
     public static boolean listEquality(Object p1, Object p2) {
@@ -53,3 +80,11 @@ public class Person implements Comparable<Person> {
 
 
 }
+class PersonComparator implements java.util.Comparator<Person> {
+
+    public int compare(Person o1, Person o2) {
+        return ((Comparable)o1.getName()).compareTo(o2.getName()) == 0 ? o1.getAge() - o2.getAge() : o1.getName().compareTo(o2.getName());
+    }
+
+}
+
