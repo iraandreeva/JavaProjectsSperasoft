@@ -1,6 +1,6 @@
 package Practice1;
 
-public abstract class Shape {
+public class Shape {
     protected String colour;
     protected boolean filled;
 
@@ -30,15 +30,10 @@ public abstract class Shape {
         this.filled = filled;
     }
 
+    @Override
     public String toString() {
         return "A Shape with the colour of " + colour + " and " + filled + ".\n";
     }
-
-    public abstract double getArea();
-
-    public abstract double getPerimeter();
-
-    public abstract boolean isInside(double x, double y);
 
 
 }
