@@ -13,6 +13,7 @@
     <session id="-1244925774">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -104,7 +105,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Practice4/PersonDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
+            <state relative-caret-position="532">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -148,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="874" />
     <option name="width" value="1053" />
     <option name="height" value="1047" />
@@ -211,7 +212,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542980845418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542982589286" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InnerClasses" />
   </component>
   <component name="RunDashboard">
@@ -332,8 +333,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.096481875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -344,7 +344,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32394367" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32394367" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49731544" weight="0.29461756" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Practice4/PersonDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="532">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
