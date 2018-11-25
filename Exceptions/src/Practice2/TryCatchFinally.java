@@ -9,11 +9,9 @@ public class TryCatchFinally {
 
     public static void main(String[] args) {
 
-        int[] array = {0, 1, 2, 3, 4};
 
         try {
-            System.out.println(array[6]);
-            System.out.println("\nNow we have trying to do smf");
+            throw new Exception("Now we have trying to do smf");
         }
         catch (Exception e) {
             System.out.println("Next messages will be print, if there are an exception:");

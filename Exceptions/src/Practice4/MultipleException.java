@@ -7,31 +7,71 @@ public class MultipleException {
 
     public static void main (String[] args) {
 
-        int[] array = {0, 1, 2, 3, 4};
-        final int ZERO = 0;
+        int i = 2;
 
         try {
-            int a = array[6]/ZERO;
-
-
-            throw new ArrayIndexOutOfBoundsException(), new ArithmeticException();
+            switch (i) {
+                case 0:
+                    throw new OutOfBounds("First exp");
+                case 1:
+                    throw new NullPointer("Second exp");
+                case 2:
+                    throw new IllegalExp("Third exp");
+            }
         }
         catch (Exception e) {
-            System.out.println("Cause = " + e.getCause() + "\nMessage = " + e.getMessage() +
-                    "\nString = " + e.toString());
+            System.out.println(e.getMessage());
         }
 
     }
 
     static class OutOfBounds extends Exception{
+        private String message;
+
+        public OutOfBounds(String exp) {
+            this.message = exp;
+        }
+
+        @Override
+        public String getMessage() {
+            return message;
+        }
 
     }
 
     static class NullPointer extends Exception{
+        private String message;
+
+        public NullPointer(String exp) {
+            this.message = exp;
+        }
+
+        public void printExp () {
+            System.out.println(message);
+        }
+
+        @Override
+        public String getMessage() {
+            return message;
+        }
 
     }
 
     static class IllegalExp extends Exception{
+        private String message;
+
+        public IllegalExp(String exp) {
+            this.message = exp;
+        }
+
+        public void printExp () {
+            System.out.println(message);
+        }
+
+        @Override
+        public String getMessage() {
+            return message;
+        }
 
     }
 }

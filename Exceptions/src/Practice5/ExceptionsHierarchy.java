@@ -5,4 +5,13 @@ package Practice5;
 // Repeat by inheriting class C from B. In main(), create a C and upcast it to A, then call the method.
 
 public class ExceptionsHierarchy {
+
+    public static void main(String[] args){
+        A array[] = {new A(), new B(), new C()};
+        for (A elem : array) {
+            elem.catchExp();
+        }
+
+
+    }
 }

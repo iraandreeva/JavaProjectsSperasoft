@@ -9,15 +9,13 @@ public class CustomException {
 
     public static void main (String[] args) {
 
-        int[] array = {0, 1, 2, 3, 4};
 
         try {
-            System.out.println(array[6]);
-            System.out.println("\nNow we have trying to do smf");
-            throw new MyException("My", " ");
+            System.out.println("Now we have trying to do smf\n");
+            throw new MyException("My exception");
         }
         catch (MyException e) {
-            //System.out.println("Next messages will be print, if there are an exception:");
+            System.out.println("Next messages will be print, if there are an exception:");
             e.printExp();
         }
         finally {
@@ -29,23 +27,21 @@ public class CustomException {
 
     static class MyException extends Exception {
 
-        private String my = "My exception";
+        private String message = "My exception";
 
-        public String getMy() {
-            return my;
+        public String getMessage() {
+            return message;
         }
 
 
-        public MyException(String exp, String my) {
-            super(exp);
-            this.my = my;
+        public MyException(String exp) {
+            this.message = exp;
         }
 
 
 
-        public String printExp () {
-
-            return "MyException()";
+        public void printExp () {
+            System.out.println(message);
         }
 
     }
