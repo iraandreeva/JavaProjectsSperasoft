@@ -11,6 +11,8 @@ public class ExceptionsHierarchy {
         for (A elem : array) {
             elem.catchExp();
         }
+        C c = new C();
+        ((A) c).catchExp();
 
 
     }

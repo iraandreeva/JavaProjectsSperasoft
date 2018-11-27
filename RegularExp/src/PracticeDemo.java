@@ -12,7 +12,7 @@ public class PracticeDemo {
 
         String demo1 = "I love dogs and they Love me! My dogs name is Bulka. She is 10 month old. Bulo4ka likes to Sleep and to eat!";
         String demo2 = "2000";
-        String demo3 = "I     love    100  dogs and  they   Love me! My dogs      name is Bulka. She is     10 month old. Bulo4ka     likes to Sleep and to eat!";
+        String demo3 = "  I     love    100  dogs and  they   Love me! My dogs      name is Bulka. She is     10 month old. Bulo4ka     likes to Sleep and to eat!  ";
         String demo4 = "26/11/2018";
         String demo5 = "Mama mama mila mila ramu ramu";
         String demo6 = "1123333455qwe667";
@@ -82,13 +82,15 @@ public class PracticeDemo {
     public static void practice2(String demo) {
 
         System.out.print(demo.matches("2\\d(1[3-9]|[2-9]\\d)|[3,4]\\d{3}|50([0-3]\\d|4[0-3])" ));
-    //
+
 
     }
 
     public static void practice3(String demo) {
 
-                System.out.print(demo.replaceAll("\\s+", " "));
+        String temp = demo.replaceAll("\\A\\s+|\\s+\\z", "");
+        System.out.print(temp.replaceAll("\\s+", " "));
+
 
 
     }
@@ -102,7 +104,7 @@ public class PracticeDemo {
     public static void practice5(String demo) {
 
         String[] arr = new String[50];
-        Pattern duplicates = Pattern.compile("(\\w+)", Pattern.CASE_INSENSITIVE);
+        Pattern duplicates = Pattern.compile("(\\w+)");
         Matcher matcher = duplicates.matcher(demo);
         Set<String> hash = new LinkedHashSet<String>();
 
