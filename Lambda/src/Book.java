@@ -32,6 +32,7 @@ public class Book implements Comparable<Book> {
     public void print() {
         System.out.println("Book's name = " + bookTitle);
         System.out.println("Book's price = " + bookPrice);
+        System.out.println("Book's author = " + author.firstName + " " + author.lastName);
     }
 
     @Override
