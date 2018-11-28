@@ -31,7 +31,7 @@ public class Demo {
                 .filter( age -> age.getAge() >= 20 && age.getAge() <= 30)
                 .map(Person::getName)
                 .distinct()
-                .map(name -> name.toUpperCase())
+                .map(String::toUpperCase)
                 .sorted(Comparator.comparingInt(String::length))
                 .collect(Collectors.toList());
 
@@ -51,14 +51,14 @@ public class Demo {
 
                  System.out.println("\nBook with highest price:");
 
-                 books.stream()
-                         .min(Book::compareTo)
-                         .get().print();
+        books.stream()
+                .max(Book::compareTo)
+                .ifPresent(Book::print);
 
 
         System.out.println("\nBooks of Joanne Rowling books:");
                  String booksJoanne = books.stream()
-                         .filter(author -> author.author.lastName == "Rowling")
+                         .filter(author -> author.author.lastName.equals("Rowling"))
                          .map(b -> "\""+ b.bookTitle + "\"")
                          .reduce((s, s2) -> s+ "  " + s2)
                          .orElse("");

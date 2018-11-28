@@ -103,7 +103,7 @@ public class PracticeDemo {
 
     public static void practice5(String demo) {
 
-        String[] arr = new String[50];
+        /*String[] arr = new String[50];
         Pattern duplicates = Pattern.compile("(\\w+)");
         Matcher matcher = duplicates.matcher(demo);
         Set<String> hash = new LinkedHashSet<String>();
@@ -116,7 +116,12 @@ public class PracticeDemo {
             }
             }
 
-         System.out.print(hash);
+         System.out.print(hash);*/
+
+        Pattern pattern = Pattern.compile("(?i)\\b([a-z]+)\\b(?:\\s+\\1\\b)+", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(demo);
+
+        System.out.println( matcher.replaceAll( "$1") );
 
     }
 

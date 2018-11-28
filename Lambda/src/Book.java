@@ -37,6 +37,6 @@ public class Book implements Comparable<Book> {
 
     @Override
     public int compareTo(Book o) {
-        return Double.compare(o.bookPrice, this.bookPrice);
+        return Double.compare(this.bookPrice, o.bookPrice);
     }
 }
