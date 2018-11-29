@@ -29,13 +29,15 @@ class OrderStats {
      * @return list, containing orders paid with provided card type
      */
     static List<Order> ordersForCardType(final Stream<Customer> customers, PaymentInfo.CardType cardType) {
-        return
-        customers
+
+        List<Order> res = customers
                 .map(Customer::getOrders)
-                .filter(ol -> ol.stream()
-                        .filter(o -> o.getPaymentInfo().CardType.equals(PaymentInfo.CardType.VISA))
-                        .findAny()
-                        .collect(Collectors.toList()));
+                .reduce((l1, l2) -> {l1.addAll(l2); return l1;}).orElse(null);
+        if(res != null)
+            res = res.stream()
+                    .filter(o -> o.getPaymentInfo().getCardType().equals(cardType))
+                    .collect(Collectors.toList());
+        return res;
 
 
 
@@ -51,8 +53,11 @@ class OrderStats {
      * @return map, where order size values mapped to lists of orders
      */
     static Map<Integer, List<Order>> orderSizes(final Stream<Order> orders) {
-        return orders
-                .map()
+
+        Map<Integer, List<Order>> res = orders
+                
+
+        return null;
     }
 
     /**
@@ -66,6 +71,7 @@ class OrderStats {
      * @return boolean, representing if every order in the stream contains product of specified color
      */
     static Boolean hasColorProduct(final Stream<Order> orders, final Product.Color color) {
+        //orders.
         return null;
     }
 
