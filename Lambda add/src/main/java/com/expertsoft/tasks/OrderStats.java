@@ -29,7 +29,6 @@ class OrderStats {
      * @return list, containing orders paid with provided card type
      */
     static List<Order> ordersForCardType(final Stream<Customer> customers, PaymentInfo.CardType cardType) {
-
         List<Order> res = customers
                 .map(Customer::getOrders)
                 .reduce((l1, l2) -> {l1.addAll(l2); return l1;}).orElse(null);
@@ -37,9 +36,7 @@ class OrderStats {
             res = res.stream()
                     .filter(o -> o.getPaymentInfo().getCardType().equals(cardType))
                     .collect(Collectors.toList());
-        return res;
-
-
+         return res;
 
     }
 
@@ -55,7 +52,7 @@ class OrderStats {
     static Map<Integer, List<Order>> orderSizes(final Stream<Order> orders) {
 
         Map<Integer, List<Order>> res = orders
-                
+
 
         return null;
     }
